@@ -5,8 +5,8 @@ import { SlBasket } from "react-icons/sl";
 const Products: FC = () => {
     const OrderList = products.map(({ title, description, price, icon }, i) => {
         return (
-            <div className={classes["pading_div"]}>
-                <div key={i} className={classes["order-card"]}>
+            <div key={i} className={classes["pading_div"]}>
+                <div className={classes["order-card"]}>
                     <img className={classes["img"]} src={icon} alt="img" />
                     <div className={classes["order-container"]}>
                         <div className={classes["order-info"]}>
