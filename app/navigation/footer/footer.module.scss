@@ -1,0 +1,115 @@
+.container {
+    background: rgba(165, 122, 194, 0.748) 83%;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .about-compony {
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        width: 20%;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 260px;
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .payment-compony {
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        width: 20%;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 130px;
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            flex-direction: row;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .help-compony {
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        width: 20%;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 85px;
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            flex-direction: row;
+            color: rgb(252, 252, 252);
+        }
+    }
+    .link_icon {
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    .follow-compony {
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        width: 20%;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 200px;
+
+        p {
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            flex-direction: row;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                text-decoration: none;
+                flex-direction: column;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: centfer;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        font-size: 11px;
+    }
+}

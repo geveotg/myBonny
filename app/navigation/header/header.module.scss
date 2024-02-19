@@ -1,0 +1,137 @@
+@import "../../style/styles.module.scss";
+.container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+
+    background: rgba(165, 122, 194, 0.748) 83%;
+    // background: rgba(255, 255, 255, 0.22);
+    // border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 2px 8px 0 rgba(32, 33, 36, 0.08);
+}
+
+.links_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease-in 0.5s;
+    width: 767px;
+    height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+.logo {
+    font-family: "Anonymous Pro", monospace;
+    text-align: center;
+    font-size: 61px;
+    letter-spacing: 2px;
+    color: rgb(144, 156, 73);
+    // background-color: rgb(61, 76, 108);
+    text-shadow: rgb(20, 0, 0) 3px 9px 3px;
+}
+
+.nav-link {
+    color: $menu_iteam_color;
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    font-style: normal;
+
+    &:hover {
+    }
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $menu_iteam_color;
+    top: 25px;
+    left: 0;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $menu_iteam_color;
+    top: 25px;
+    left: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.nav-link:hover::after {
+    transform: scale(1);
+}
+
+.close_menu {
+    width: 80px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.close_menu_icon {
+    font-size: 70px;
+}
+.links_container.open {
+    transform: translate(0%, 0%);
+    transition: ease-in 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        height: auto;
+        background: transparent;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    }
+    .close_menu {
+        display: flex;
+    }
+    .links_container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translate(-100%, 0%);
+        // width: 70%;
+        min-width: 300px;
+        height: 100vh;
+        background: rgba(141, 81, 181, 0.748) 83%;
+    }
+
+    #app_logo {
+        display: none;
+    }
+    .nav-link {
+        font-weight: 700;
+        font-size: 22px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+}
+
+.app_log {
+    border-radius: 50%;
+}
