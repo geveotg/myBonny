@@ -12,10 +12,7 @@ const Header: FC = (): JSX.Element => {
 
     return (
         <div className={classes["container"]}>
-            <div
-                className={classes["close_menu"]}
-                onClick={() => setIsOpen(!isOpen)}
-            >
+            <div className={classes["close_menu"]} onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? (
                     <IoMdClose className={classes["close_menu_icon"]} />
                 ) : (
@@ -23,11 +20,7 @@ const Header: FC = (): JSX.Element => {
                 )}
             </div>
 
-            <div
-                className={`${classes["links_container"]} ${
-                    isOpen ? classes["open"] : ""
-                }`}
-            >
+            <div className={`${classes["links_container"]} ${isOpen ? classes["open"] : ""}`}>
                 <Link className={classes["nav-link"]} href={"/"}>
                     home
                 </Link>
@@ -50,11 +43,6 @@ const Header: FC = (): JSX.Element => {
                     home Link
                 </Link>
             </div>
-
-            {/* <div className={classes["contacts_container"]}>
-                <BsFillTelephoneOutboundFill className={classes["telephone"]} />{" "}
-                <span>(+374) 55 65-63-66</span>
-            </div> */}
         </div>
     );
 };

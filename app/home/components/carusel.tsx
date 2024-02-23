@@ -5,12 +5,7 @@ import { Carousel } from "antd";
 import classes from "../style/carusel.module.scss";
 
 const Carusel: React.FC = () => {
-    const images = [
-        "/img/slide_1.jpg",
-        "/img/slide_2.jpg",
-        "/img/slide_3.jpg",
-        "/img/slide_4.jpg",
-    ];
+    const images = ["/img/slide_1.jpg", "/img/slide_2.jpg", "/img/slide_3.jpg", "/img/slide_4.jpg"];
 
     const imagesList = images.map((el, i) => {
         return (
@@ -24,7 +19,11 @@ const Carusel: React.FC = () => {
         console.log(currentSlide);
     };
 
-    return <Carousel afterChange={onChange}>{imagesList}</Carousel>;
+    return (
+        <Carousel autoplay afterChange={onChange}>
+            {imagesList}
+        </Carousel>
+    );
 };
 
 export default Carusel;
