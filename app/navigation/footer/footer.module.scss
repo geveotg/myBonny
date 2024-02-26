@@ -1,10 +1,12 @@
 .container {
-    background: #184d47;
-    height: 300px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    height: 400px;
     color: white;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
 
     .about-compony {
         color: rgb(255, 255, 255);
@@ -25,12 +27,12 @@
     .payment-compony {
         color: rgb(255, 255, 255);
         margin-top: 20px;
-        width: 20%;
+        width: 50%;
         display: flex;
-        align-items: start;
-        justify-content: space-around;
+        align-items: center;
+        // justify-content: space-between;
         flex-direction: column;
-        height: 130px;
+        height: 200px;
 
         a {
             display: flex;
@@ -39,38 +41,55 @@
             flex-direction: row;
             color: rgb(255, 255, 255);
         }
-    }
+        h3 {
+            margin-bottom: 15px;
+        }
 
-    .help-compony {
-        color: rgb(255, 255, 255);
-        margin-top: 20px;
-        width: 20%;
-        display: flex;
-        align-items: start;
-        justify-content: space-around;
-        flex-direction: column;
-        height: 85px;
-
-        a {
+        .card_link {
             display: flex;
-            justify-content: space-between;
-            text-decoration: none;
-            flex-direction: row;
-            color: rgb(252, 252, 252);
+        }
+
+        .cont_icons {
+            display: flex;
+        }
+
+        .card_icons {
+            padding: 0px 10px;
+            opacity: 0.8;
+            font-size: 55px;
+            cursor: pointer;
+        }
+
+        .card_icons:hover {
+            opacity: 1;
         }
     }
+
     .link_icon {
         font-size: 25px;
         margin: 5px;
     }
 
+    .follow_icon {
+        color: white;
+        padding: 0px 10px;
+        opacity: 0.8;
+        font-size: 55px;
+        cursor: pointer;
+    }
+
+    .follow_icon:hover {
+        opacity: 1;
+    }
+
     .follow-compony {
+        row-gap: 10px;
         color: rgb(255, 255, 255);
         margin-top: 20px;
-        width: 20%;
+        width: 50%;
         display: flex;
-        align-items: start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: space-between;
         flex-direction: column;
         height: 200px;
 
@@ -92,24 +111,17 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: centfer;
-        flex-direction: row;
-        align-items: flex-start;
         height: auto;
-    }
-}
-@media screen and (max-width: 600px) {
-    .container {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        flex-direction: row;
-        align-items: flex-start;
-        height: auto;
-        font-size: 11px;
+        .payment-compony {
+            width: 100%;
+            height: 120px;
+        }
+        .follow-compony {
+            width: 100%;
+            // height: 120px;
+        }
     }
 }

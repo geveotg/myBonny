@@ -1,0 +1,82 @@
+.global {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(107, 107, 107);
+    margin-top: 100px;
+    width: 96%;
+    border-radius: 5px 5px 15px 15px;
+}
+
+.name h1 {
+    font-size: 45px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    animation: name_anim 2s infinite alternate;
+}
+
+@keyframes name_anim {
+    0% {
+        transform: scale(1);
+        color: #94bbe9;
+    }
+
+    100% {
+        transform: scale(1.05);
+        color: #eeaeca;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 70px;
+}
+
+@keyframes btn_anim {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .row {
+        width: 350px;
+    }
+
+    .name h1 {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .name h1 {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .name h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .name h1 {
+        font-size: 30px;
+    }
+}

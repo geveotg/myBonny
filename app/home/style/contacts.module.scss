@@ -41,3 +41,12 @@
     font-size: 18px;
     color: black;
 }
+
+@media screen and (max-width: 767px) {
+    .slide_card {
+        margin-top: 0px;
+    }
+    .tel_container {
+        margin-right: 15px;
+    }
+}

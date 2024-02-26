@@ -10,7 +10,9 @@ const Carusel: React.FC = () => {
     const imagesList = images.map((el, i) => {
         return (
             <div key={i} className={classes["slide_card"]}>
-                <img className={classes["slide_image"]} src={el} alt="img" />
+                <div className={classes["standartWide"]}>
+                    <img className={classes["slide_image"]} src={el} alt="img" />
+                </div>
             </div>
         );
     });
@@ -19,11 +21,7 @@ const Carusel: React.FC = () => {
         console.log(currentSlide);
     };
 
-    return (
-        <Carousel autoplay afterChange={onChange}>
-            {imagesList}
-        </Carousel>
-    );
+    return <Carousel afterChange={onChange}>{imagesList}</Carousel>;
 };
 
 export default Carusel;

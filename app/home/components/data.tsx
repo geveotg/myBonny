@@ -17,55 +17,59 @@ export const promotion_data = [
 
 export const products = [
     {
-        id: "ID MB001",
+        id: " MB001",
         description: "25 հատ կինդեռ շոկոլադ, 10 հատ կինդեռ ձվիկ",
         title: "Կինդեռ բոքս ",
-        price: 13000,
+        price: 0,
         icon: "/img/products/img5.jpg",
     },
     {
-        id: "ID MB002",
+        id: " MB002",
         title: "Սրտաձև կինդեռ բոքս",
         description: "38 կինդեռ շոկոլադ, 5 կինդեռ ձվիկ, 2 կինդեռ բուենո",
-        price: 17000,
+        price: 0,
         icon: "/img/products/img2.jpg",
     },
     {
+        id: " MB003",
         title: "Քաղցր փունջ",
-        description:
-            "3 կիթկաթ, 3 սնիկերս, 3 կինդեռ ձվիկ, 4 միլկի, 2 ալպեն գոլդ , 1 թվիքս ",
-        price: 20000,
+        description: "3 կիթկաթ, 3 սնիկերս, 3 կինդեռ ձվիկ, 4 միլկի, 2 ալպեն գոլդ , 1 թվիքս ",
+        price: 0,
         icon: "/img/products/img3.jpg",
     },
     {
+        id: " MB004",
         title: "Կոմպոզիցիա",
-        description:
-            "38 կինդեռ շոկոլադ , 3 կինդեռ բուենո, 2 ռոշեն, 3 կինդեռ ձվիկ, 5 մերսի ",
-        price: 2000,
+        description: "38 կինդեռ շոկոլադ , 3 կինդեռ բուենո, 2 ռոշեն, 3 կինդեռ ձվիկ, 5 մերսի ",
+        price: 0,
         icon: "/img/products/img4.jpg",
     },
     {
+        id: " MB005",
         title: "Կոնֆետներ",
         description: " Տարբերվող դիզայն",
-        price: 2000,
-        icon: "/img/products/img001.jpg",
-    },
-    {
-        title: "Կոնֆետներ",
-        description: " Տարբերվող դիզայն",
-        price: 20000,
+        price: 0,
         icon: "/img/products/img6.jpg",
     },
     {
+        id: " MB006",
+        title: "Կոնֆետներ",
+        description: " Տարբերվող դիզայն",
+        price: 0,
+        icon: "/img/products/img6.jpg",
+    },
+    {
+        id: " MB007",
         title: "Բոքսեր",
         description: " Տարբերվող դիզայն",
-        price: 25000,
+        price: 0,
         icon: "/img/products/img7.jpg",
     },
     {
+        id: " MB008",
         title: "Կոնֆետներ",
         description: " Տարբերվող դիզայն",
-        price: 20000,
+        price: 0,
         icon: "/img/products/img8.jpg",
     },
 ];
